@@ -3,12 +3,11 @@ import "./PostCreate.css";
 import { Redirect } from "react-router-dom";
 import { createPost } from "../../services/posts";
 
-const postcreate = (props) => {
+const PostCreate = (props) => {
   const [post, setPost] = useState({
-    name: "",
-    description: "",
-    imgURL: "",
-    price: "",
+    title: "",
+    author: "",
+    content: "",
   });
 
   const [isCreated, setCreated] = useState(false);
@@ -65,4 +64,4 @@ const postcreate = (props) => {
   );
 };
 
-export default postcreate;
+export default PostCreate;

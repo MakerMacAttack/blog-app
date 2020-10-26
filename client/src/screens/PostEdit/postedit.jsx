@@ -3,7 +3,7 @@ import "./PostEdit.css";
 import { useParams, Redirect } from "react-router-dom";
 import { getPost, updatePost } from "../../services/posts";
 
-const postedit = (props) => {
+const PostEdit = (props) => {
   const [post, setPost] = useState({
     title: "",
     author: "",
@@ -78,4 +78,4 @@ const postedit = (props) => {
   );
 };
 
-export default postedit;
+export default PostEdit;

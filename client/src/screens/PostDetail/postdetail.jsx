@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./postdetail.css";
+import "./PostDetail.css";
 import { getPost, deletePost } from "../../services/posts";
 import { useParams, Link } from "react-router-dom";
 
