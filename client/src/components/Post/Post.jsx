@@ -6,8 +6,8 @@ const Post = (props) => {
   return (
     <>
       <Link className="post" to={`/posts/${props._id}`}>
-        <h2 className="title">{props.title}</h2>
-        <h3 className="author">{props.author}</h3>
+        <h2 className="post-title">{props.title}</h2>
+        <h3 className="post-author">{props.author}</h3>
       </Link>
     </>
   );
