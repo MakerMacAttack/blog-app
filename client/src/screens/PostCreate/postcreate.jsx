@@ -30,6 +30,7 @@ const PostCreate = (props) => {
     return <Redirect to={`/posts`} />;
   }
   return (
+    <div className="formContainer">
     <form className="create-form" onSubmit={handleSubmit}>
       <input
         className="input-title"
@@ -61,6 +62,7 @@ const PostCreate = (props) => {
         Submit
       </button>
     </form>
+    </div>
   );
 };
 
