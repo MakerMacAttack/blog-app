@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./PostCreate.css";
+import "./PostBuild.css";
 import { Redirect } from "react-router-dom";
 import { createPost } from "../../services/posts";
 
-const PostCreate = (props) => {
+const PostBuild = (props) => {
   const [post, setPost] = useState({
     title: "",
     author: "",
@@ -30,7 +30,6 @@ const PostCreate = (props) => {
     return <Redirect to={`/posts`} />;
   }
   return (
-    <div className="formContainer">
     <form className="create-form" onSubmit={handleSubmit}>
       <input
         className="input-title"
@@ -62,8 +61,7 @@ const PostCreate = (props) => {
         Submit
       </button>
     </form>
-    </div>
   );
 };
 
-export default PostCreate;
+export default PostBuild;
