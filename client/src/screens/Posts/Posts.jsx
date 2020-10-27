@@ -4,7 +4,7 @@ import Post from "../../components/Post/Post";
 import { getPosts } from "../../services/posts";
 
 const Posts = (props) => {
-  const [allPosts, setAllPosts] = useState([]);
+  // const [allPosts, setAllPosts] = useState([]);
   const [queriedPosts, setQueriedPosts] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const Posts = (props) => {
     fetchPosts();
   }, []);
 
-  const handleSubmit = (event) => event.preventDefault();
+  // const handleSubmit = (event) => event.preventDefault();
 
   const postsJSX = queriedPosts.map((post, index) => (
     <Post
