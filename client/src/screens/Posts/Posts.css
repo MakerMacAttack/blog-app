@@ -1,0 +1,33 @@
+.posts {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.detail {
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 20px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+label {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .posts {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
