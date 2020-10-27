@@ -10,7 +10,7 @@ const Posts = (props) => {
   useEffect(() => {
     const fetchPosts = async () => {
       const posts = await getPosts();
-      setAllPosts(posts);
+      // setAllPosts(posts);
       setQueriedPosts(posts);
     };
     fetchPosts();
