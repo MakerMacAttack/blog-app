@@ -3,7 +3,7 @@ import axios from "axios";
 let apiUrl;
 
 const apiUrls = {
-    production: "https://sei-posts-api.herokuapp.com/api", // Come back after local test works //
+    production: "https://phnx-4-blogapp.herokuapp.com/api", // Come back after local test works //
   development: "http://localhost:3000/api",
 };
 
